@@ -1,38 +1,70 @@
-.App {
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
+  transform: scale(1.03);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 1px 1px 2px #ffefef;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.vote-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 15px;
+}
+
+.vote-label {
+  font-size: 16px;
+  color: #444;
+}
+
+.vote-select {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.submit-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #ff7e5f;
   color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.submit-button:hover {
+  background-color: #eb5e28;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.message-box {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #2d3436;
+  background-color: #dfe6e9;
+  padding: 10px;
+  border-radius: 10px;
 }
